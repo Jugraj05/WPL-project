@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Sign up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="backg">
+        <div class="formbox">
+            <div class="buttonbox">
+                <div id="btn"></div>
+                <button type="button" class="togglebutton" onclick="login()">Login</button>
+                <button type="button" class="togglebutton" onclick="signup()">Signup</button>
+            </div>
+            <div class="socialmediaicons">
+                <a href="#">
+                <img src="images/fb.png" alt="facebook">
+                </a>
+                <a href="#">
+                <img src="images/gg.png" alt="google">
+                </a>
+            </div>
+            <form id="login" class="inputgroup">
+                <input type="text" class="inputfield" placeholders="User ID" required>
+                <input type="text" class="inputfield" placeholders="Enter Password" required>
+                <input type="checkbox" class="check"><span>Remember Password</span>
+                <button type="submit" class="submitbutton">Login</button>
+            </form>
+
+                        <form id="signup" class="inputgroup">
+                            <input type="text" class="inputfield" placeholders="User ID" required>
+                            <input type="email" class="inputfield" placeholders="Email ID" required>
+                            <input type="text" class="inputfield" placeholders="Enter Password" required>
+                            <input type="number" class="inputfield" placeholders="Mobile no." required>
+                            <input type="checkbox" class="check"><span>I agree to the terms of Privacy</span>
+                            <button type="submit" class="submitbutton">Sign Up</button>
+                        
+                        </form>
+
+        </div>
+        
+    </div>
+    <script>
+        var a=document.getElementById("login");
+        var b= document.getElementById("signup");
+        var c = document.getElementById("btn");
+
+        function signup(){
+            a.style.left= "-400px";
+            b.style.left= "50px";
+            c.style.left= "110px";
+        }
+        function login() {
+                a.style.left = "50px";
+                b.style.left = "450px";
+                c.style.left = "0";
+            }
+    </script>
+</body>
+</html>
